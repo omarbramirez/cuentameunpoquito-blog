@@ -10,7 +10,11 @@ import { AppConfig } from '../utils/AppConfig';
 import { getAllPosts } from '../utils/Content';
 
 const Index = (props: IBlogGalleryProps) => (
-  <Main meta={<Meta title="Cuéntame un PoQuito" />}>
+  <Main
+    meta={
+      <Meta title="Cuéntame un PoQuito" description="Cuéntame un PoQuito" />
+    }
+  >
     <BlogGallery posts={props.posts} pagination={props.pagination} />
   </Main>
 );
