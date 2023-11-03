@@ -1,10 +1,10 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Next.js Boilerplate',
+  site_name: 'Cuéntame un PoQuito',
+  title: 'Cuéntame un PoQuito',
   description:
-    'Starter code for your Next.js blog Boilerplate with Tailwind CSS',
-  url: 'https://example.com',
-  locale: 'en',
-  author: 'Anonymous',
+    'Blog oficial del festival de microcuentos dirigido a la ciudadanía quiteña para la promoción de la lectura y la escritura sobre la ciudad, el uso de la lengua y la apropiación del espacio público.',
+  url: 'https://cuentameunpoquito.netlify.app/',
+  locale: 'es',
+  author: 'Omar Ramírez',
   pagination_size: 5,
 };

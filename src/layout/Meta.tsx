@@ -29,11 +29,7 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
-        <link
-          rel="apple-touch-icon"
-          href={`${router.basePath}/apple-touch-icon.png`}
-          key="apple"
-        />
+        <link rel="logo" href={`${router.basePath}/logo.png`} key="logo" />
         <link
           rel="icon"
           type="image/png"
@@ -53,7 +49,7 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
-        <title>{`${props.title} | ${AppConfig.site_name}`}</title>
+        <title>{`${props.title}`}</title>
         <meta
           name="description"
           content={
@@ -65,11 +61,7 @@ const Meta = (props: IMetaProps) => {
         {props.canonical && (
           <link rel="canonical" href={props.canonical} key="canonical" />
         )}
-        <meta
-          property="og:title"
-          content={`${props.title} | ${AppConfig.site_name}`}
-          key="og:title"
-        />
+        <meta property="og:title" content={`${props.title}`} key="og:title" />
         <meta
           property="og:description"
           content={
@@ -133,7 +125,7 @@ const Meta = (props: IMetaProps) => {
               },
               "name": "${AppConfig.author}"
             },
-            "headline": "${props.title} | ${AppConfig.site_name}",
+            "headline": "${props.title}",
             "image": ["${AppConfig.url}${router.basePath}${props.post.image}"],
             "datePublished": "${new Date(props.post.date).toISOString()}",
             "dateModified": "${new Date(

@@ -8,6 +8,10 @@ a:hover {
   @apply underline;
 }
 
+.description {
+  text-align: center
+}
+
 @tailwind components;
 
 @tailwind utilities;

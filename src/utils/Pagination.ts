@@ -17,5 +17,5 @@ export function convertUrlToLinkHref(url: string) {
     return '/';
   }
 
-  return '/[page]';
+  return '/[pagina]';
 }
